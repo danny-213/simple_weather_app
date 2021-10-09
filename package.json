@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+{
+  "homepage": "https://danny-213.github.io/simple_weather_app",
+=======
 {"homepage": "https://danny-213.github.io/simple_weather_app",
+>>>>>>> f5253a02599d4d359e505e60216d10809db5d82e
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
@@ -12,8 +17,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
