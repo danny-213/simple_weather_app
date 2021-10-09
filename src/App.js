@@ -1,6 +1,6 @@
 // USER STORY
 // the site should be responsive to viewport size
-// user can type in to search for location 
+// from user input, show 5 top match options for user to select from
 // retrieve location's weather info from an api with city name
 // report if not found 
 // show location name, date, tempt, weather, change background 
@@ -10,7 +10,7 @@ import { useState } from 'react';
 function App() {
   const api = {
     key:"9168607ecb0ef359fec85f8482b821c5",
-    baseUrl:"https://api.openweathermap.org/data/2.5/"
+    baseUrl:"https://api.openweathermap.org/data/2.5/weather?"
   }
 
   //getting cityname from user input
@@ -20,7 +20,7 @@ function App() {
   }
 
   
-  const reqUrl = `${api.baseUrl}weather?q=${cityname}&units=metric&appid=${api.key}`;
+  const reqUrl = `${api.baseUrl}q=${cityname}&units=metric&appid=${api.key}`;
 
   
   // on submit, retrieve temp, weather description to state
